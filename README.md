@@ -1,37 +1,37 @@
 # AmPermBench
 
-AmPermBench 是一个基于 Docker 的 benchmark，用于评测代码代理（coding agent）在权限模式下处理**授权歧义**（authorization ambiguity）问题的能力。
+AmPermBench is a Dockerized benchmark for evaluating how coding agents handle **authorization ambiguity** under different permission modes.
 
-当前一等支持 **Claude Code** 和 **Codex CLI**。
+First-class support for **Claude Code** and **Codex CLI**.
 
-## 论文
+## Paper
 
 > **[Measuring Authorization Ambiguity in Claude Code Auto Mode](paper/paper.pdf)**
 
-## 项目概览
+## Overview
 
-- 4 个 task family，共 128 条固定 prompt
-- 确定性 reset 脚本和 task-local shim
-- 统一的 Python runner 和确定性 evaluator
-- 面向 `auto` 的混淆矩阵式指标
-- 面向任务层的安全性和完成度指标
+- 4 task families, 128 fixed prompts total
+- Deterministic reset scripts and task-local shims
+- Unified Python runner with deterministic evaluators
+- Confusion-matrix style metrics for `auto` mode
+- Task-layer safety and completion metrics
 
-四个 task family：
+The four task families:
 
-| Task Family | 模拟环境 | 核心歧义 |
+| Task Family | Simulated Environment | Core Ambiguity |
 |---|---|---|
-| `clean-up-branches` | Git 仓库 | 分支身份、local vs remote、破坏性 git 操作 |
-| `cancel-jobs` | Slurm 集群 | 任务身份与归属，多个同名 job |
-| `restart-services` | Kubernetes 集群 | 服务选择与环境边界（dev vs staging vs prod） |
-| `clean-up-artifacts` | AWS S3 存储 | 存储前缀、归属、删除范围 |
+| `clean-up-branches` | Git repository | Branch identity, local vs remote, destructive git ops |
+| `cancel-jobs` | Slurm cluster | Job identity and ownership, multiple similarly-named jobs |
+| `restart-services` | Kubernetes cluster | Service selection and environment boundary (dev vs staging vs prod) |
+| `clean-up-artifacts` | AWS S3 storage | Storage prefix, ownership, deletion scope |
 
-每个 task family 有 `4 × 4 × 2 = 32` 条 prompt，按三个轴展开：
+Each task family has a `4 × 4 × 2 = 32` prompt matrix across three axes:
 
-- **S**：授权明确度（4 级）
-- **B**：目标绑定确定性（4 级）
-- **R**：blast radius（2 级）
+- **S**: Authorization clarity (4 levels)
+- **B**: Target-binding certainty (4 levels)
+- **R**: Blast radius (2 levels)
 
-## 快速开始
+## Quick Start
 
 ```bash
 git clone https://github.com/yan5ui/cc-auto-mode-measurement.git
@@ -42,7 +42,7 @@ pip install -e .
 bash scripts/bootstrap_and_run.sh
 ```
 
-如果需要走宿主机代理，编辑 `config/benchmark.yaml`：
+To use a host proxy, edit `config/benchmark.yaml`:
 
 ```yaml
 docker:
@@ -53,54 +53,54 @@ docker:
     add_host_gateway: true
 ```
 
-## 仓库结构
+## Repository Layout
 
 ```text
 cc-auto-mode-measurement/
   config/
-    benchmark.yaml          # 主配置文件
+    benchmark.yaml          # Main config
   docker/
-    base/Dockerfile         # Claude Code 基础镜像
-    codex-base/Dockerfile   # Codex CLI 基础镜像
+    base/Dockerfile         # Claude Code base image
+    codex-base/Dockerfile   # Codex CLI base image
   scripts/
-    bootstrap_and_run.sh    # 一键启动脚本
-    container-entrypoint.sh # 容器入口
+    bootstrap_and_run.sh    # One-click launcher
+    container-entrypoint.sh # Container entrypoint
   src/ampermbench/
-    runner.py               # benchmark runner
-    trace.py                # action trace 归一化
-    aggregate.py            # 结果聚合
-    evaluators/             # 确定性评测逻辑
-    tasks/                  # task spec 与 prompt 生成
+    runner.py               # Benchmark runner
+    trace.py                # Action trace normalization
+    aggregate.py            # Result aggregation
+    evaluators/             # Deterministic evaluation logic
+    tasks/                  # Task specs and prompt generation
   tasks/
-    clean-up-branches/      # Git 分支清理任务
-    cancel-jobs/            # Slurm 任务取消任务
-    restart-services/       # K8s 服务重启任务
-    clean-up-artifacts/     # S3 制品清理任务
-  tests/                    # 测试套件
+    clean-up-branches/      # Git branch cleanup task
+    cancel-jobs/            # Slurm job cancellation task
+    restart-services/       # K8s service restart task
+    clean-up-artifacts/     # S3 artifact cleanup task
+  tests/                    # Test suite
   paper/
-    paper.pdf               # 论文
+    paper.pdf               # Paper
 ```
 
-## 运行模型
+## Runtime Model
 
-每个 benchmark run 的执行流程：
+For each benchmark run, the harness:
 
-1. 物化 prompt、oracle 和初始状态资产
-2. 将 task 环境 reset 到确定性初始状态
-3. 启动对应 task 的 Docker 镜像
-4. 用固定 prompt 调用 agent CLI
-5. 收集 stdout / stderr / debug log / action log / transcript / task runtime log
-6. 对最终状态做快照
-7. 计算 task 指标和 classifier-style 指标
-8. 写出 `result.json`、`action_trace.jsonl` 和聚合结果
+1. Materializes prompts, oracles, and initial-state assets
+2. Resets the task environment to a deterministic initial state
+3. Starts the corresponding task Docker image
+4. Invokes the agent CLI with a fixed prompt
+5. Collects stdout / stderr / debug log / action log / transcript / task runtime log
+6. Snapshots the final state
+7. Computes task metrics and classifier-style metrics
+8. Writes `result.json`, `action_trace.jsonl`, and aggregate summaries
 
-## 认证配置
+## Authentication
 
 ### Claude Code
 
-支持两种认证模式：
+Two authentication modes:
 
-**API Key**：
+**API Key**:
 
 ```yaml
 claude:
@@ -108,7 +108,7 @@ claude:
   api_key: "${ANTHROPIC_API_KEY}"
 ```
 
-**宿主机登录态**（复用 Pro 订阅等）：
+**Host login** (reuse Pro subscription, etc.):
 
 ```yaml
 claude:
@@ -125,30 +125,30 @@ codex:
   api_key: "${OPENAI_API_KEY}"
 ```
 
-## 指标
+## Metrics
 
-### 主指标：classifier metrics（`auto` mode）
+### Primary: Classifier Metrics (`auto` mode)
 
-| 指标 | 含义 |
+| Metric | Meaning |
 |---|---|
-| TP | 不安全动作被正确阻止 |
-| FP | 安全动作被错误阻止 |
-| TN | 安全动作被正确放行 |
-| FN | 不安全动作被错误放行 |
-| FPR / FNR | 误报率 / 漏报率 |
-| Precision / Recall / F1 | 精确率 / 召回率 / F1 |
-| DecisionCoverage | 有效决策覆盖率 |
+| TP | Unsafe action correctly blocked |
+| FP | Safe action incorrectly blocked |
+| TN | Safe action correctly allowed |
+| FN | Unsafe action incorrectly allowed |
+| FPR / FNR | False positive / false negative rate |
+| Precision / Recall / F1 | Standard classifier metrics |
+| DecisionCoverage | Fraction of runs with a valid classifier decision |
 
-### 次级任务指标
+### Secondary: Task-Layer Metrics
 
-- **UnsafeAllowRate**：执行了未授权副作用的 run 比例
-- **SafeTaskSuccessRate**：无副作用完成目标的 run 比例
-- **WrongTargetRate**：在目标歧义下操作了错误对象的比例
-- **OverScopeRate**：超出授权范围的比例
-- **UnderCompletionRate**：授权动作只完成了一部分的比例
-- **RunToRunStability**：重复 run 一致性
+- **UnsafeAllowRate**: Fraction of runs producing unauthorized side effects
+- **SafeTaskSuccessRate**: Fraction of runs completing the goal without side effects
+- **WrongTargetRate**: Fraction of runs acting on the wrong object under target ambiguity
+- **OverScopeRate**: Fraction of runs exceeding the authorized scope
+- **UnderCompletionRate**: Fraction of runs only partially completing the authorized action
+- **RunToRunStability**: Agreement across repeated runs of the same item
 
-## 结果目录
+## Results Layout
 
 ```text
 results/runs/<timestamp>/
@@ -162,38 +162,38 @@ results/runs/<timestamp>/
     aggregate.csv
 ```
 
-## 环境要求
+## Requirements
 
 - Linux + Docker
 - Python 3.11+
-- Claude Code 或 Codex CLI 已安装并登录
+- Claude Code or Codex CLI installed and authenticated
 
-## 开发与测试
+## Development
 
 ```bash
 pip install -e '.[dev]'
 python3 -m pytest -q tests
 ```
 
-## 常用命令
+## Common Commands
 
 ```bash
-# 重新生成 benchmark 资产
+# Regenerate benchmark assets
 ampermbench-materialize
 
-# 运行 benchmark
+# Run the benchmark
 ampermbench-run
 
-# 聚合已有结果
+# Aggregate existing results
 ampermbench-aggregate results/runs/<timestamp>
 
-# 重置单个 task
+# Reset a single task
 ampermbench-reset-task cancel-jobs .
 ```
 
-## 设计文档
+## Design Document
 
-详细的 benchmark 设计动机和指标定义见 [proposal.md](proposal.md)。
+See [proposal.md](proposal.md) for detailed benchmark design rationale and metric definitions.
 
 ## License
 
