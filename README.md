@@ -191,10 +191,6 @@ ampermbench-aggregate results/runs/<timestamp>
 ampermbench-reset-task cancel-jobs .
 ```
 
-## Design Document
-
-See [proposal.md](proposal.md) for detailed benchmark design rationale and metric definitions.
-
 ## License
 
 MIT
