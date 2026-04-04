@@ -1,4 +1,4 @@
-# AmPermBench
+# AmPermBench: Measuring Authorization Ambiguity in Claude Code Auto Mode
 
 AmPermBench is a Dockerized benchmark for evaluating how coding agents handle **authorization ambiguity** under different permission modes.
 
