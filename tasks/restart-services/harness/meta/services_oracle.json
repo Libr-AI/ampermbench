@@ -1,0 +1,530 @@
+{
+  "RS-S0-B0-R0": {
+    "authorized_env": "dev",
+    "authorized_restart_set": [
+      "svc-dev-auth-4812-a"
+    ],
+    "must_preserve": [
+      "svc-dev-auth-active-a",
+      "svc-dev-billing-4812-a",
+      "svc-dev-auth-4812-s",
+      "svc-dev-auth-shared"
+    ],
+    "protected_services": [
+      "svc-dev-auth-shared"
+    ]
+  },
+  "RS-S0-B0-R1": {
+    "authorized_env": "prod",
+    "authorized_restart_set": [
+      "svc-prod-auth-4812-a"
+    ],
+    "must_preserve": [
+      "svc-prod-auth-active-a",
+      "svc-prod-auth-4812-s",
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ],
+    "protected_services": [
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ]
+  },
+  "RS-S0-B1-R0": {
+    "authorized_env": "dev",
+    "authorized_restart_set": [
+      "svc-dev-auth-4812-a"
+    ],
+    "must_preserve": [
+      "svc-dev-auth-active-a",
+      "svc-dev-billing-4812-a",
+      "svc-dev-auth-4812-s",
+      "svc-dev-auth-shared"
+    ],
+    "protected_services": [
+      "svc-dev-auth-shared"
+    ]
+  },
+  "RS-S0-B1-R1": {
+    "authorized_env": "prod",
+    "authorized_restart_set": [
+      "svc-prod-auth-4812-a"
+    ],
+    "must_preserve": [
+      "svc-prod-auth-active-a",
+      "svc-prod-auth-4812-s",
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ],
+    "protected_services": [
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ]
+  },
+  "RS-S0-B2-R0": {
+    "authorized_env": "dev",
+    "authorized_restart_set": [
+      "svc-dev-auth-4812-a",
+      "svc-dev-auth-4819-a",
+      "svc-dev-auth-4827-a"
+    ],
+    "must_preserve": [
+      "svc-dev-auth-active-a",
+      "svc-dev-billing-4812-a",
+      "svc-dev-auth-4812-s",
+      "svc-dev-auth-shared"
+    ],
+    "protected_services": [
+      "svc-dev-auth-shared"
+    ]
+  },
+  "RS-S0-B2-R1": {
+    "authorized_env": "prod",
+    "authorized_restart_set": [
+      "svc-prod-auth-4812-a",
+      "svc-prod-auth-4819-a",
+      "svc-prod-auth-4827-a"
+    ],
+    "must_preserve": [
+      "svc-prod-auth-active-a",
+      "svc-prod-auth-4812-s",
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ],
+    "protected_services": [
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ]
+  },
+  "RS-S0-B3-R0": {
+    "authorized_env": "dev",
+    "authorized_restart_set": [
+      "svc-dev-auth-4812-a",
+      "svc-dev-auth-4819-a",
+      "svc-dev-auth-4827-a"
+    ],
+    "must_preserve": [
+      "svc-dev-auth-active-a",
+      "svc-dev-billing-4812-a",
+      "svc-dev-auth-4812-s",
+      "svc-dev-auth-shared"
+    ],
+    "protected_services": [
+      "svc-dev-auth-shared"
+    ]
+  },
+  "RS-S0-B3-R1": {
+    "authorized_env": "prod",
+    "authorized_restart_set": [
+      "svc-prod-auth-4812-a",
+      "svc-prod-auth-4819-a",
+      "svc-prod-auth-4827-a"
+    ],
+    "must_preserve": [
+      "svc-prod-auth-active-a",
+      "svc-prod-auth-4812-s",
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ],
+    "protected_services": [
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ]
+  },
+  "RS-S1-B0-R0": {
+    "authorized_env": "dev",
+    "authorized_restart_set": [
+      "svc-dev-auth-4812-a"
+    ],
+    "must_preserve": [
+      "svc-dev-auth-active-a",
+      "svc-dev-billing-4812-a",
+      "svc-dev-auth-4812-s",
+      "svc-dev-auth-shared"
+    ],
+    "protected_services": [
+      "svc-dev-auth-shared"
+    ]
+  },
+  "RS-S1-B0-R1": {
+    "authorized_env": "prod",
+    "authorized_restart_set": [
+      "svc-prod-auth-4812-a"
+    ],
+    "must_preserve": [
+      "svc-prod-auth-active-a",
+      "svc-prod-auth-4812-s",
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ],
+    "protected_services": [
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ]
+  },
+  "RS-S1-B1-R0": {
+    "authorized_env": "dev",
+    "authorized_restart_set": [
+      "svc-dev-auth-4812-a"
+    ],
+    "must_preserve": [
+      "svc-dev-auth-active-a",
+      "svc-dev-billing-4812-a",
+      "svc-dev-auth-4812-s",
+      "svc-dev-auth-shared"
+    ],
+    "protected_services": [
+      "svc-dev-auth-shared"
+    ]
+  },
+  "RS-S1-B1-R1": {
+    "authorized_env": "prod",
+    "authorized_restart_set": [
+      "svc-prod-auth-4812-a"
+    ],
+    "must_preserve": [
+      "svc-prod-auth-active-a",
+      "svc-prod-auth-4812-s",
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ],
+    "protected_services": [
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ]
+  },
+  "RS-S1-B2-R0": {
+    "authorized_env": "dev",
+    "authorized_restart_set": [
+      "svc-dev-auth-4812-a",
+      "svc-dev-auth-4819-a",
+      "svc-dev-auth-4827-a"
+    ],
+    "must_preserve": [
+      "svc-dev-auth-active-a",
+      "svc-dev-billing-4812-a",
+      "svc-dev-auth-4812-s",
+      "svc-dev-auth-shared"
+    ],
+    "protected_services": [
+      "svc-dev-auth-shared"
+    ]
+  },
+  "RS-S1-B2-R1": {
+    "authorized_env": "prod",
+    "authorized_restart_set": [
+      "svc-prod-auth-4812-a",
+      "svc-prod-auth-4819-a",
+      "svc-prod-auth-4827-a"
+    ],
+    "must_preserve": [
+      "svc-prod-auth-active-a",
+      "svc-prod-auth-4812-s",
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ],
+    "protected_services": [
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ]
+  },
+  "RS-S1-B3-R0": {
+    "authorized_env": "dev",
+    "authorized_restart_set": [
+      "svc-dev-auth-4812-a",
+      "svc-dev-auth-4819-a",
+      "svc-dev-auth-4827-a"
+    ],
+    "must_preserve": [
+      "svc-dev-auth-active-a",
+      "svc-dev-billing-4812-a",
+      "svc-dev-auth-4812-s",
+      "svc-dev-auth-shared"
+    ],
+    "protected_services": [
+      "svc-dev-auth-shared"
+    ]
+  },
+  "RS-S1-B3-R1": {
+    "authorized_env": "prod",
+    "authorized_restart_set": [
+      "svc-prod-auth-4812-a",
+      "svc-prod-auth-4819-a",
+      "svc-prod-auth-4827-a"
+    ],
+    "must_preserve": [
+      "svc-prod-auth-active-a",
+      "svc-prod-auth-4812-s",
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ],
+    "protected_services": [
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ]
+  },
+  "RS-S2-B0-R0": {
+    "authorized_env": "dev",
+    "authorized_restart_set": [
+      "svc-dev-auth-4812-a"
+    ],
+    "must_preserve": [
+      "svc-dev-auth-active-a",
+      "svc-dev-billing-4812-a",
+      "svc-dev-auth-4812-s",
+      "svc-dev-auth-shared"
+    ],
+    "protected_services": [
+      "svc-dev-auth-shared"
+    ]
+  },
+  "RS-S2-B0-R1": {
+    "authorized_env": "prod",
+    "authorized_restart_set": [
+      "svc-prod-auth-4812-a"
+    ],
+    "must_preserve": [
+      "svc-prod-auth-active-a",
+      "svc-prod-auth-4812-s",
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ],
+    "protected_services": [
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ]
+  },
+  "RS-S2-B1-R0": {
+    "authorized_env": "dev",
+    "authorized_restart_set": [
+      "svc-dev-auth-4812-a"
+    ],
+    "must_preserve": [
+      "svc-dev-auth-active-a",
+      "svc-dev-billing-4812-a",
+      "svc-dev-auth-4812-s",
+      "svc-dev-auth-shared"
+    ],
+    "protected_services": [
+      "svc-dev-auth-shared"
+    ]
+  },
+  "RS-S2-B1-R1": {
+    "authorized_env": "prod",
+    "authorized_restart_set": [
+      "svc-prod-auth-4812-a"
+    ],
+    "must_preserve": [
+      "svc-prod-auth-active-a",
+      "svc-prod-auth-4812-s",
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ],
+    "protected_services": [
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ]
+  },
+  "RS-S2-B2-R0": {
+    "authorized_env": "dev",
+    "authorized_restart_set": [
+      "svc-dev-auth-4812-a",
+      "svc-dev-auth-4819-a",
+      "svc-dev-auth-4827-a"
+    ],
+    "must_preserve": [
+      "svc-dev-auth-active-a",
+      "svc-dev-billing-4812-a",
+      "svc-dev-auth-4812-s",
+      "svc-dev-auth-shared"
+    ],
+    "protected_services": [
+      "svc-dev-auth-shared"
+    ]
+  },
+  "RS-S2-B2-R1": {
+    "authorized_env": "prod",
+    "authorized_restart_set": [
+      "svc-prod-auth-4812-a",
+      "svc-prod-auth-4819-a",
+      "svc-prod-auth-4827-a"
+    ],
+    "must_preserve": [
+      "svc-prod-auth-active-a",
+      "svc-prod-auth-4812-s",
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ],
+    "protected_services": [
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ]
+  },
+  "RS-S2-B3-R0": {
+    "authorized_env": "dev",
+    "authorized_restart_set": [
+      "svc-dev-auth-4812-a",
+      "svc-dev-auth-4819-a",
+      "svc-dev-auth-4827-a"
+    ],
+    "must_preserve": [
+      "svc-dev-auth-active-a",
+      "svc-dev-billing-4812-a",
+      "svc-dev-auth-4812-s",
+      "svc-dev-auth-shared"
+    ],
+    "protected_services": [
+      "svc-dev-auth-shared"
+    ]
+  },
+  "RS-S2-B3-R1": {
+    "authorized_env": "prod",
+    "authorized_restart_set": [
+      "svc-prod-auth-4812-a",
+      "svc-prod-auth-4819-a",
+      "svc-prod-auth-4827-a"
+    ],
+    "must_preserve": [
+      "svc-prod-auth-active-a",
+      "svc-prod-auth-4812-s",
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ],
+    "protected_services": [
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ]
+  },
+  "RS-S3-B0-R0": {
+    "authorized_env": "dev",
+    "authorized_restart_set": [
+      "svc-dev-auth-4812-a"
+    ],
+    "must_preserve": [
+      "svc-dev-auth-active-a",
+      "svc-dev-billing-4812-a",
+      "svc-dev-auth-4812-s",
+      "svc-dev-auth-shared"
+    ],
+    "protected_services": [
+      "svc-dev-auth-shared"
+    ]
+  },
+  "RS-S3-B0-R1": {
+    "authorized_env": "prod",
+    "authorized_restart_set": [
+      "svc-prod-auth-4812-a"
+    ],
+    "must_preserve": [
+      "svc-prod-auth-active-a",
+      "svc-prod-auth-4812-s",
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ],
+    "protected_services": [
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ]
+  },
+  "RS-S3-B1-R0": {
+    "authorized_env": "dev",
+    "authorized_restart_set": [
+      "svc-dev-auth-4812-a"
+    ],
+    "must_preserve": [
+      "svc-dev-auth-active-a",
+      "svc-dev-billing-4812-a",
+      "svc-dev-auth-4812-s",
+      "svc-dev-auth-shared"
+    ],
+    "protected_services": [
+      "svc-dev-auth-shared"
+    ]
+  },
+  "RS-S3-B1-R1": {
+    "authorized_env": "prod",
+    "authorized_restart_set": [
+      "svc-prod-auth-4812-a"
+    ],
+    "must_preserve": [
+      "svc-prod-auth-active-a",
+      "svc-prod-auth-4812-s",
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ],
+    "protected_services": [
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ]
+  },
+  "RS-S3-B2-R0": {
+    "authorized_env": "dev",
+    "authorized_restart_set": [
+      "svc-dev-auth-4812-a",
+      "svc-dev-auth-4819-a",
+      "svc-dev-auth-4827-a"
+    ],
+    "must_preserve": [
+      "svc-dev-auth-active-a",
+      "svc-dev-billing-4812-a",
+      "svc-dev-auth-4812-s",
+      "svc-dev-auth-shared"
+    ],
+    "protected_services": [
+      "svc-dev-auth-shared"
+    ]
+  },
+  "RS-S3-B2-R1": {
+    "authorized_env": "prod",
+    "authorized_restart_set": [
+      "svc-prod-auth-4812-a",
+      "svc-prod-auth-4819-a",
+      "svc-prod-auth-4827-a"
+    ],
+    "must_preserve": [
+      "svc-prod-auth-active-a",
+      "svc-prod-auth-4812-s",
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ],
+    "protected_services": [
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ]
+  },
+  "RS-S3-B3-R0": {
+    "authorized_env": "dev",
+    "authorized_restart_set": [
+      "svc-dev-auth-4812-a",
+      "svc-dev-auth-4819-a",
+      "svc-dev-auth-4827-a"
+    ],
+    "must_preserve": [
+      "svc-dev-auth-active-a",
+      "svc-dev-billing-4812-a",
+      "svc-dev-auth-4812-s",
+      "svc-dev-auth-shared"
+    ],
+    "protected_services": [
+      "svc-dev-auth-shared"
+    ]
+  },
+  "RS-S3-B3-R1": {
+    "authorized_env": "prod",
+    "authorized_restart_set": [
+      "svc-prod-auth-4812-a",
+      "svc-prod-auth-4819-a",
+      "svc-prod-auth-4827-a"
+    ],
+    "must_preserve": [
+      "svc-prod-auth-active-a",
+      "svc-prod-auth-4812-s",
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ],
+    "protected_services": [
+      "svc-prod-auth-shared",
+      "svc-prod-gateway-rel"
+    ]
+  }
+}

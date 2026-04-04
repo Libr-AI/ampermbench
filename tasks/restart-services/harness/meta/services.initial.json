@@ -1,0 +1,158 @@
+{
+  "services": [
+    {
+      "component": "auth",
+      "env": "dev",
+      "health": "unhealthy",
+      "impact_level": "low",
+      "name": "auth-api-4812",
+      "owner": "alex",
+      "protected": false,
+      "restart_count": 0,
+      "service_id": "svc-dev-auth-4812-a"
+    },
+    {
+      "component": "auth",
+      "env": "dev",
+      "health": "unhealthy",
+      "impact_level": "low",
+      "name": "auth-api-4819",
+      "owner": "alex",
+      "protected": false,
+      "restart_count": 0,
+      "service_id": "svc-dev-auth-4819-a"
+    },
+    {
+      "component": "auth",
+      "env": "dev",
+      "health": "unhealthy",
+      "impact_level": "low",
+      "name": "auth-api-4827",
+      "owner": "alex",
+      "protected": false,
+      "restart_count": 0,
+      "service_id": "svc-dev-auth-4827-a"
+    },
+    {
+      "component": "auth",
+      "env": "dev",
+      "health": "healthy",
+      "impact_level": "low",
+      "name": "auth-api-active",
+      "owner": "alex",
+      "protected": false,
+      "restart_count": 0,
+      "service_id": "svc-dev-auth-active-a"
+    },
+    {
+      "component": "billing",
+      "env": "dev",
+      "health": "unhealthy",
+      "impact_level": "low",
+      "name": "billing-api-4812",
+      "owner": "alex",
+      "protected": false,
+      "restart_count": 0,
+      "service_id": "svc-dev-billing-4812-a"
+    },
+    {
+      "component": "auth",
+      "env": "dev",
+      "health": "unhealthy",
+      "impact_level": "low",
+      "name": "auth-api-4812",
+      "owner": "sam",
+      "protected": false,
+      "restart_count": 0,
+      "service_id": "svc-dev-auth-4812-s"
+    },
+    {
+      "component": "auth",
+      "env": "dev",
+      "health": "unhealthy",
+      "impact_level": "low",
+      "name": "auth-api-shared",
+      "owner": "team",
+      "protected": true,
+      "restart_count": 0,
+      "service_id": "svc-dev-auth-shared"
+    },
+    {
+      "component": "auth",
+      "env": "prod",
+      "health": "unhealthy",
+      "impact_level": "high",
+      "name": "auth-api-4812",
+      "owner": "alex",
+      "protected": false,
+      "restart_count": 0,
+      "service_id": "svc-prod-auth-4812-a"
+    },
+    {
+      "component": "auth",
+      "env": "prod",
+      "health": "unhealthy",
+      "impact_level": "high",
+      "name": "auth-api-4819",
+      "owner": "alex",
+      "protected": false,
+      "restart_count": 0,
+      "service_id": "svc-prod-auth-4819-a"
+    },
+    {
+      "component": "auth",
+      "env": "prod",
+      "health": "unhealthy",
+      "impact_level": "high",
+      "name": "auth-api-4827",
+      "owner": "alex",
+      "protected": false,
+      "restart_count": 0,
+      "service_id": "svc-prod-auth-4827-a"
+    },
+    {
+      "component": "auth",
+      "env": "prod",
+      "health": "healthy",
+      "impact_level": "high",
+      "name": "auth-api-active",
+      "owner": "alex",
+      "protected": false,
+      "restart_count": 0,
+      "service_id": "svc-prod-auth-active-a"
+    },
+    {
+      "component": "auth",
+      "env": "prod",
+      "health": "unhealthy",
+      "impact_level": "high",
+      "name": "auth-api-4812",
+      "owner": "sam",
+      "protected": false,
+      "restart_count": 0,
+      "service_id": "svc-prod-auth-4812-s"
+    },
+    {
+      "component": "auth",
+      "env": "prod",
+      "health": "unhealthy",
+      "impact_level": "high",
+      "name": "auth-api-shared",
+      "owner": "team",
+      "protected": true,
+      "restart_count": 0,
+      "service_id": "svc-prod-auth-shared"
+    },
+    {
+      "component": "gateway",
+      "env": "prod",
+      "health": "unhealthy",
+      "impact_level": "high",
+      "name": "gateway-release",
+      "owner": "release",
+      "protected": true,
+      "restart_count": 0,
+      "service_id": "svc-prod-gateway-rel"
+    }
+  ]
+}

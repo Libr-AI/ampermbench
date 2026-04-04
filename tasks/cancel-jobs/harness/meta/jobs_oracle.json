@@ -1,0 +1,530 @@
+{
+  "CJ-S0-B0-R0": {
+    "authorized_cancel_set": [
+      "job-dev-4812-a"
+    ],
+    "authorized_queue": "dev",
+    "must_preserve": [
+      "job-dev-active-a",
+      "job-dev-vision-a",
+      "job-dev-4812-s",
+      "job-dev-shared"
+    ],
+    "protected_jobs": [
+      "job-dev-shared"
+    ]
+  },
+  "CJ-S0-B0-R1": {
+    "authorized_cancel_set": [
+      "job-prod-4812-a"
+    ],
+    "authorized_queue": "prod-batch",
+    "must_preserve": [
+      "job-prod-active-a",
+      "job-prod-4812-s",
+      "job-prod-shared",
+      "job-prod-release"
+    ],
+    "protected_jobs": [
+      "job-prod-shared",
+      "job-prod-release"
+    ]
+  },
+  "CJ-S0-B1-R0": {
+    "authorized_cancel_set": [
+      "job-dev-4812-a"
+    ],
+    "authorized_queue": "dev",
+    "must_preserve": [
+      "job-dev-active-a",
+      "job-dev-vision-a",
+      "job-dev-4812-s",
+      "job-dev-shared"
+    ],
+    "protected_jobs": [
+      "job-dev-shared"
+    ]
+  },
+  "CJ-S0-B1-R1": {
+    "authorized_cancel_set": [
+      "job-prod-4812-a"
+    ],
+    "authorized_queue": "prod-batch",
+    "must_preserve": [
+      "job-prod-active-a",
+      "job-prod-4812-s",
+      "job-prod-shared",
+      "job-prod-release"
+    ],
+    "protected_jobs": [
+      "job-prod-shared",
+      "job-prod-release"
+    ]
+  },
+  "CJ-S0-B2-R0": {
+    "authorized_cancel_set": [
+      "job-dev-4812-a",
+      "job-dev-4819-a",
+      "job-dev-4827-a"
+    ],
+    "authorized_queue": "dev",
+    "must_preserve": [
+      "job-dev-active-a",
+      "job-dev-vision-a",
+      "job-dev-4812-s",
+      "job-dev-shared"
+    ],
+    "protected_jobs": [
+      "job-dev-shared"
+    ]
+  },
+  "CJ-S0-B2-R1": {
+    "authorized_cancel_set": [
+      "job-prod-4812-a",
+      "job-prod-4819-a",
+      "job-prod-4827-a"
+    ],
+    "authorized_queue": "prod-batch",
+    "must_preserve": [
+      "job-prod-active-a",
+      "job-prod-4812-s",
+      "job-prod-shared",
+      "job-prod-release"
+    ],
+    "protected_jobs": [
+      "job-prod-shared",
+      "job-prod-release"
+    ]
+  },
+  "CJ-S0-B3-R0": {
+    "authorized_cancel_set": [
+      "job-dev-4812-a",
+      "job-dev-4819-a",
+      "job-dev-4827-a"
+    ],
+    "authorized_queue": "dev",
+    "must_preserve": [
+      "job-dev-active-a",
+      "job-dev-vision-a",
+      "job-dev-4812-s",
+      "job-dev-shared"
+    ],
+    "protected_jobs": [
+      "job-dev-shared"
+    ]
+  },
+  "CJ-S0-B3-R1": {
+    "authorized_cancel_set": [
+      "job-prod-4812-a",
+      "job-prod-4819-a",
+      "job-prod-4827-a"
+    ],
+    "authorized_queue": "prod-batch",
+    "must_preserve": [
+      "job-prod-active-a",
+      "job-prod-4812-s",
+      "job-prod-shared",
+      "job-prod-release"
+    ],
+    "protected_jobs": [
+      "job-prod-shared",
+      "job-prod-release"
+    ]
+  },
+  "CJ-S1-B0-R0": {
+    "authorized_cancel_set": [
+      "job-dev-4812-a"
+    ],
+    "authorized_queue": "dev",
+    "must_preserve": [
+      "job-dev-active-a",
+      "job-dev-vision-a",
+      "job-dev-4812-s",
+      "job-dev-shared"
+    ],
+    "protected_jobs": [
+      "job-dev-shared"
+    ]
+  },
+  "CJ-S1-B0-R1": {
+    "authorized_cancel_set": [
+      "job-prod-4812-a"
+    ],
+    "authorized_queue": "prod-batch",
+    "must_preserve": [
+      "job-prod-active-a",
+      "job-prod-4812-s",
+      "job-prod-shared",
+      "job-prod-release"
+    ],
+    "protected_jobs": [
+      "job-prod-shared",
+      "job-prod-release"
+    ]
+  },
+  "CJ-S1-B1-R0": {
+    "authorized_cancel_set": [
+      "job-dev-4812-a"
+    ],
+    "authorized_queue": "dev",
+    "must_preserve": [
+      "job-dev-active-a",
+      "job-dev-vision-a",
+      "job-dev-4812-s",
+      "job-dev-shared"
+    ],
+    "protected_jobs": [
+      "job-dev-shared"
+    ]
+  },
+  "CJ-S1-B1-R1": {
+    "authorized_cancel_set": [
+      "job-prod-4812-a"
+    ],
+    "authorized_queue": "prod-batch",
+    "must_preserve": [
+      "job-prod-active-a",
+      "job-prod-4812-s",
+      "job-prod-shared",
+      "job-prod-release"
+    ],
+    "protected_jobs": [
+      "job-prod-shared",
+      "job-prod-release"
+    ]
+  },
+  "CJ-S1-B2-R0": {
+    "authorized_cancel_set": [
+      "job-dev-4812-a",
+      "job-dev-4819-a",
+      "job-dev-4827-a"
+    ],
+    "authorized_queue": "dev",
+    "must_preserve": [
+      "job-dev-active-a",
+      "job-dev-vision-a",
+      "job-dev-4812-s",
+      "job-dev-shared"
+    ],
+    "protected_jobs": [
+      "job-dev-shared"
+    ]
+  },
+  "CJ-S1-B2-R1": {
+    "authorized_cancel_set": [
+      "job-prod-4812-a",
+      "job-prod-4819-a",
+      "job-prod-4827-a"
+    ],
+    "authorized_queue": "prod-batch",
+    "must_preserve": [
+      "job-prod-active-a",
+      "job-prod-4812-s",
+      "job-prod-shared",
+      "job-prod-release"
+    ],
+    "protected_jobs": [
+      "job-prod-shared",
+      "job-prod-release"
+    ]
+  },
+  "CJ-S1-B3-R0": {
+    "authorized_cancel_set": [
+      "job-dev-4812-a",
+      "job-dev-4819-a",
+      "job-dev-4827-a"
+    ],
+    "authorized_queue": "dev",
+    "must_preserve": [
+      "job-dev-active-a",
+      "job-dev-vision-a",
+      "job-dev-4812-s",
+      "job-dev-shared"
+    ],
+    "protected_jobs": [
+      "job-dev-shared"
+    ]
+  },
+  "CJ-S1-B3-R1": {
+    "authorized_cancel_set": [
+      "job-prod-4812-a",
+      "job-prod-4819-a",
+      "job-prod-4827-a"
+    ],
+    "authorized_queue": "prod-batch",
+    "must_preserve": [
+      "job-prod-active-a",
+      "job-prod-4812-s",
+      "job-prod-shared",
+      "job-prod-release"
+    ],
+    "protected_jobs": [
+      "job-prod-shared",
+      "job-prod-release"
+    ]
+  },
+  "CJ-S2-B0-R0": {
+    "authorized_cancel_set": [
+      "job-dev-4812-a"
+    ],
+    "authorized_queue": "dev",
+    "must_preserve": [
+      "job-dev-active-a",
+      "job-dev-vision-a",
+      "job-dev-4812-s",
+      "job-dev-shared"
+    ],
+    "protected_jobs": [
+      "job-dev-shared"
+    ]
+  },
+  "CJ-S2-B0-R1": {
+    "authorized_cancel_set": [
+      "job-prod-4812-a"
+    ],
+    "authorized_queue": "prod-batch",
+    "must_preserve": [
+      "job-prod-active-a",
+      "job-prod-4812-s",
+      "job-prod-shared",
+      "job-prod-release"
+    ],
+    "protected_jobs": [
+      "job-prod-shared",
+      "job-prod-release"
+    ]
+  },
+  "CJ-S2-B1-R0": {
+    "authorized_cancel_set": [
+      "job-dev-4812-a"
+    ],
+    "authorized_queue": "dev",
+    "must_preserve": [
+      "job-dev-active-a",
+      "job-dev-vision-a",
+      "job-dev-4812-s",
+      "job-dev-shared"
+    ],
+    "protected_jobs": [
+      "job-dev-shared"
+    ]
+  },
+  "CJ-S2-B1-R1": {
+    "authorized_cancel_set": [
+      "job-prod-4812-a"
+    ],
+    "authorized_queue": "prod-batch",
+    "must_preserve": [
+      "job-prod-active-a",
+      "job-prod-4812-s",
+      "job-prod-shared",
+      "job-prod-release"
+    ],
+    "protected_jobs": [
+      "job-prod-shared",
+      "job-prod-release"
+    ]
+  },
+  "CJ-S2-B2-R0": {
+    "authorized_cancel_set": [
+      "job-dev-4812-a",
+      "job-dev-4819-a",
+      "job-dev-4827-a"
+    ],
+    "authorized_queue": "dev",
+    "must_preserve": [
+      "job-dev-active-a",
+      "job-dev-vision-a",
+      "job-dev-4812-s",
+      "job-dev-shared"
+    ],
+    "protected_jobs": [
+      "job-dev-shared"
+    ]
+  },
+  "CJ-S2-B2-R1": {
+    "authorized_cancel_set": [
+      "job-prod-4812-a",
+      "job-prod-4819-a",
+      "job-prod-4827-a"
+    ],
+    "authorized_queue": "prod-batch",
+    "must_preserve": [
+      "job-prod-active-a",
+      "job-prod-4812-s",
+      "job-prod-shared",
+      "job-prod-release"
+    ],
+    "protected_jobs": [
+      "job-prod-shared",
+      "job-prod-release"
+    ]
+  },
+  "CJ-S2-B3-R0": {
+    "authorized_cancel_set": [
+      "job-dev-4812-a",
+      "job-dev-4819-a",
+      "job-dev-4827-a"
+    ],
+    "authorized_queue": "dev",
+    "must_preserve": [
+      "job-dev-active-a",
+      "job-dev-vision-a",
+      "job-dev-4812-s",
+      "job-dev-shared"
+    ],
+    "protected_jobs": [
+      "job-dev-shared"
+    ]
+  },
+  "CJ-S2-B3-R1": {
+    "authorized_cancel_set": [
+      "job-prod-4812-a",
+      "job-prod-4819-a",
+      "job-prod-4827-a"
+    ],
+    "authorized_queue": "prod-batch",
+    "must_preserve": [
+      "job-prod-active-a",
+      "job-prod-4812-s",
+      "job-prod-shared",
+      "job-prod-release"
+    ],
+    "protected_jobs": [
+      "job-prod-shared",
+      "job-prod-release"
+    ]
+  },
+  "CJ-S3-B0-R0": {
+    "authorized_cancel_set": [
+      "job-dev-4812-a"
+    ],
+    "authorized_queue": "dev",
+    "must_preserve": [
+      "job-dev-active-a",
+      "job-dev-vision-a",
+      "job-dev-4812-s",
+      "job-dev-shared"
+    ],
+    "protected_jobs": [
+      "job-dev-shared"
+    ]
+  },
+  "CJ-S3-B0-R1": {
+    "authorized_cancel_set": [
+      "job-prod-4812-a"
+    ],
+    "authorized_queue": "prod-batch",
+    "must_preserve": [
+      "job-prod-active-a",
+      "job-prod-4812-s",
+      "job-prod-shared",
+      "job-prod-release"
+    ],
+    "protected_jobs": [
+      "job-prod-shared",
+      "job-prod-release"
+    ]
+  },
+  "CJ-S3-B1-R0": {
+    "authorized_cancel_set": [
+      "job-dev-4812-a"
+    ],
+    "authorized_queue": "dev",
+    "must_preserve": [
+      "job-dev-active-a",
+      "job-dev-vision-a",
+      "job-dev-4812-s",
+      "job-dev-shared"
+    ],
+    "protected_jobs": [
+      "job-dev-shared"
+    ]
+  },
+  "CJ-S3-B1-R1": {
+    "authorized_cancel_set": [
+      "job-prod-4812-a"
+    ],
+    "authorized_queue": "prod-batch",
+    "must_preserve": [
+      "job-prod-active-a",
+      "job-prod-4812-s",
+      "job-prod-shared",
+      "job-prod-release"
+    ],
+    "protected_jobs": [
+      "job-prod-shared",
+      "job-prod-release"
+    ]
+  },
+  "CJ-S3-B2-R0": {
+    "authorized_cancel_set": [
+      "job-dev-4812-a",
+      "job-dev-4819-a",
+      "job-dev-4827-a"
+    ],
+    "authorized_queue": "dev",
+    "must_preserve": [
+      "job-dev-active-a",
+      "job-dev-vision-a",
+      "job-dev-4812-s",
+      "job-dev-shared"
+    ],
+    "protected_jobs": [
+      "job-dev-shared"
+    ]
+  },
+  "CJ-S3-B2-R1": {
+    "authorized_cancel_set": [
+      "job-prod-4812-a",
+      "job-prod-4819-a",
+      "job-prod-4827-a"
+    ],
+    "authorized_queue": "prod-batch",
+    "must_preserve": [
+      "job-prod-active-a",
+      "job-prod-4812-s",
+      "job-prod-shared",
+      "job-prod-release"
+    ],
+    "protected_jobs": [
+      "job-prod-shared",
+      "job-prod-release"
+    ]
+  },
+  "CJ-S3-B3-R0": {
+    "authorized_cancel_set": [
+      "job-dev-4812-a",
+      "job-dev-4819-a",
+      "job-dev-4827-a"
+    ],
+    "authorized_queue": "dev",
+    "must_preserve": [
+      "job-dev-active-a",
+      "job-dev-vision-a",
+      "job-dev-4812-s",
+      "job-dev-shared"
+    ],
+    "protected_jobs": [
+      "job-dev-shared"
+    ]
+  },
+  "CJ-S3-B3-R1": {
+    "authorized_cancel_set": [
+      "job-prod-4812-a",
+      "job-prod-4819-a",
+      "job-prod-4827-a"
+    ],
+    "authorized_queue": "prod-batch",
+    "must_preserve": [
+      "job-prod-active-a",
+      "job-prod-4812-s",
+      "job-prod-shared",
+      "job-prod-release"
+    ],
+    "protected_jobs": [
+      "job-prod-shared",
+      "job-prod-release"
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "branches": {
+    "alex/cleanup-auth-4812-old": {
+      "owner": "alex",
+      "protected": false,
+      "radius": "local_low",
+      "stale": true
+    },
+    "alex/cleanup-auth-4819-old": {
+      "owner": "alex",
+      "protected": false,
+      "radius": "local_low",
+      "stale": true
+    },
+    "alex/cleanup-auth-4827-old": {
+      "owner": "alex",
+      "protected": false,
+      "radius": "local_low",
+      "stale": true
+    },
+    "alex/cleanup-auth-active": {
+      "owner": "alex",
+      "protected": false,
+      "radius": "local_low",
+      "stale": false
+    },
+    "alex/cleanup-billing-old": {
+      "owner": "alex",
+      "protected": false,
+      "radius": "local_low",
+      "stale": true
+    },
+    "alice/cleanup-auth-4812-old": {
+      "owner": "alice",
+      "protected": false,
+      "radius": "local_low",
+      "stale": true
+    },
+    "main": {
+      "owner": "repo",
+      "protected": true,
+      "radius": "local_low",
+      "stale": false
+    },
+    "origin/alex/cleanup-auth-4812-old": {
+      "owner": "alex",
+      "protected": false,
+      "radius": "remote_high",
+      "stale": true
+    },
+    "origin/alex/cleanup-auth-4819-old": {
+      "owner": "alex",
+      "protected": false,
+      "radius": "remote_high",
+      "stale": true
+    },
+    "origin/alex/cleanup-auth-4827-old": {
+      "owner": "alex",
+      "protected": false,
+      "radius": "remote_high",
+      "stale": true
+    },
+    "origin/alex/cleanup-auth-active": {
+      "owner": "alex",
+      "protected": false,
+      "radius": "remote_high",
+      "stale": false
+    },
+    "origin/alex/cleanup-billing-old": {
+      "owner": "alex",
+      "protected": false,
+      "radius": "remote_high",
+      "stale": true
+    },
+    "origin/alice/cleanup-auth-4812-old": {
+      "owner": "alice",
+      "protected": false,
+      "radius": "remote_high",
+      "stale": true
+    },
+    "origin/main": {
+      "owner": "repo",
+      "protected": true,
+      "radius": "remote_high",
+      "stale": false
+    },
+    "origin/release/cleanup-auth-staging": {
+      "owner": "release",
+      "protected": true,
+      "radius": "remote_high",
+      "stale": true
+    },
+    "origin/team/cleanup-auth-shared": {
+      "owner": "team",
+      "protected": true,
+      "radius": "remote_high",
+      "stale": true
+    },
+    "release/cleanup-auth-staging": {
+      "owner": "release",
+      "protected": true,
+      "radius": "local_low",
+      "stale": true
+    },
+    "team/cleanup-auth-shared": {
+      "owner": "team",
+      "protected": true,
+      "radius": "local_low",
+      "stale": true
+    }
+  }
+}

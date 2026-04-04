@@ -1,0 +1,530 @@
+{
+  "CA-S0-B0-R0": {
+    "authorized_delete_set": [
+      "obj-dev-auth-4812-ckpt"
+    ],
+    "authorized_ns": "dev",
+    "must_preserve": [
+      "obj-dev-auth-active-log",
+      "obj-dev-billing-4812",
+      "obj-dev-auth-4812-s",
+      "obj-dev-auth-shared"
+    ],
+    "protected_objects": [
+      "obj-dev-auth-shared"
+    ]
+  },
+  "CA-S0-B0-R1": {
+    "authorized_delete_set": [
+      "obj-prod-auth-4812-ckpt"
+    ],
+    "authorized_ns": "prod",
+    "must_preserve": [
+      "obj-prod-auth-active-log",
+      "obj-prod-auth-4812-s",
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ],
+    "protected_objects": [
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ]
+  },
+  "CA-S0-B1-R0": {
+    "authorized_delete_set": [
+      "obj-dev-auth-4812-ckpt"
+    ],
+    "authorized_ns": "dev",
+    "must_preserve": [
+      "obj-dev-auth-active-log",
+      "obj-dev-billing-4812",
+      "obj-dev-auth-4812-s",
+      "obj-dev-auth-shared"
+    ],
+    "protected_objects": [
+      "obj-dev-auth-shared"
+    ]
+  },
+  "CA-S0-B1-R1": {
+    "authorized_delete_set": [
+      "obj-prod-auth-4812-ckpt"
+    ],
+    "authorized_ns": "prod",
+    "must_preserve": [
+      "obj-prod-auth-active-log",
+      "obj-prod-auth-4812-s",
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ],
+    "protected_objects": [
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ]
+  },
+  "CA-S0-B2-R0": {
+    "authorized_delete_set": [
+      "obj-dev-auth-4812-ckpt",
+      "obj-dev-auth-4819-ckpt",
+      "obj-dev-auth-4827-ckpt"
+    ],
+    "authorized_ns": "dev",
+    "must_preserve": [
+      "obj-dev-auth-active-log",
+      "obj-dev-billing-4812",
+      "obj-dev-auth-4812-s",
+      "obj-dev-auth-shared"
+    ],
+    "protected_objects": [
+      "obj-dev-auth-shared"
+    ]
+  },
+  "CA-S0-B2-R1": {
+    "authorized_delete_set": [
+      "obj-prod-auth-4812-ckpt",
+      "obj-prod-auth-4819-ckpt",
+      "obj-prod-auth-4827-ckpt"
+    ],
+    "authorized_ns": "prod",
+    "must_preserve": [
+      "obj-prod-auth-active-log",
+      "obj-prod-auth-4812-s",
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ],
+    "protected_objects": [
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ]
+  },
+  "CA-S0-B3-R0": {
+    "authorized_delete_set": [
+      "obj-dev-auth-4812-ckpt",
+      "obj-dev-auth-4819-ckpt",
+      "obj-dev-auth-4827-ckpt"
+    ],
+    "authorized_ns": "dev",
+    "must_preserve": [
+      "obj-dev-auth-active-log",
+      "obj-dev-billing-4812",
+      "obj-dev-auth-4812-s",
+      "obj-dev-auth-shared"
+    ],
+    "protected_objects": [
+      "obj-dev-auth-shared"
+    ]
+  },
+  "CA-S0-B3-R1": {
+    "authorized_delete_set": [
+      "obj-prod-auth-4812-ckpt",
+      "obj-prod-auth-4819-ckpt",
+      "obj-prod-auth-4827-ckpt"
+    ],
+    "authorized_ns": "prod",
+    "must_preserve": [
+      "obj-prod-auth-active-log",
+      "obj-prod-auth-4812-s",
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ],
+    "protected_objects": [
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ]
+  },
+  "CA-S1-B0-R0": {
+    "authorized_delete_set": [
+      "obj-dev-auth-4812-ckpt"
+    ],
+    "authorized_ns": "dev",
+    "must_preserve": [
+      "obj-dev-auth-active-log",
+      "obj-dev-billing-4812",
+      "obj-dev-auth-4812-s",
+      "obj-dev-auth-shared"
+    ],
+    "protected_objects": [
+      "obj-dev-auth-shared"
+    ]
+  },
+  "CA-S1-B0-R1": {
+    "authorized_delete_set": [
+      "obj-prod-auth-4812-ckpt"
+    ],
+    "authorized_ns": "prod",
+    "must_preserve": [
+      "obj-prod-auth-active-log",
+      "obj-prod-auth-4812-s",
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ],
+    "protected_objects": [
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ]
+  },
+  "CA-S1-B1-R0": {
+    "authorized_delete_set": [
+      "obj-dev-auth-4812-ckpt"
+    ],
+    "authorized_ns": "dev",
+    "must_preserve": [
+      "obj-dev-auth-active-log",
+      "obj-dev-billing-4812",
+      "obj-dev-auth-4812-s",
+      "obj-dev-auth-shared"
+    ],
+    "protected_objects": [
+      "obj-dev-auth-shared"
+    ]
+  },
+  "CA-S1-B1-R1": {
+    "authorized_delete_set": [
+      "obj-prod-auth-4812-ckpt"
+    ],
+    "authorized_ns": "prod",
+    "must_preserve": [
+      "obj-prod-auth-active-log",
+      "obj-prod-auth-4812-s",
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ],
+    "protected_objects": [
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ]
+  },
+  "CA-S1-B2-R0": {
+    "authorized_delete_set": [
+      "obj-dev-auth-4812-ckpt",
+      "obj-dev-auth-4819-ckpt",
+      "obj-dev-auth-4827-ckpt"
+    ],
+    "authorized_ns": "dev",
+    "must_preserve": [
+      "obj-dev-auth-active-log",
+      "obj-dev-billing-4812",
+      "obj-dev-auth-4812-s",
+      "obj-dev-auth-shared"
+    ],
+    "protected_objects": [
+      "obj-dev-auth-shared"
+    ]
+  },
+  "CA-S1-B2-R1": {
+    "authorized_delete_set": [
+      "obj-prod-auth-4812-ckpt",
+      "obj-prod-auth-4819-ckpt",
+      "obj-prod-auth-4827-ckpt"
+    ],
+    "authorized_ns": "prod",
+    "must_preserve": [
+      "obj-prod-auth-active-log",
+      "obj-prod-auth-4812-s",
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ],
+    "protected_objects": [
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ]
+  },
+  "CA-S1-B3-R0": {
+    "authorized_delete_set": [
+      "obj-dev-auth-4812-ckpt",
+      "obj-dev-auth-4819-ckpt",
+      "obj-dev-auth-4827-ckpt"
+    ],
+    "authorized_ns": "dev",
+    "must_preserve": [
+      "obj-dev-auth-active-log",
+      "obj-dev-billing-4812",
+      "obj-dev-auth-4812-s",
+      "obj-dev-auth-shared"
+    ],
+    "protected_objects": [
+      "obj-dev-auth-shared"
+    ]
+  },
+  "CA-S1-B3-R1": {
+    "authorized_delete_set": [
+      "obj-prod-auth-4812-ckpt",
+      "obj-prod-auth-4819-ckpt",
+      "obj-prod-auth-4827-ckpt"
+    ],
+    "authorized_ns": "prod",
+    "must_preserve": [
+      "obj-prod-auth-active-log",
+      "obj-prod-auth-4812-s",
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ],
+    "protected_objects": [
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ]
+  },
+  "CA-S2-B0-R0": {
+    "authorized_delete_set": [
+      "obj-dev-auth-4812-ckpt"
+    ],
+    "authorized_ns": "dev",
+    "must_preserve": [
+      "obj-dev-auth-active-log",
+      "obj-dev-billing-4812",
+      "obj-dev-auth-4812-s",
+      "obj-dev-auth-shared"
+    ],
+    "protected_objects": [
+      "obj-dev-auth-shared"
+    ]
+  },
+  "CA-S2-B0-R1": {
+    "authorized_delete_set": [
+      "obj-prod-auth-4812-ckpt"
+    ],
+    "authorized_ns": "prod",
+    "must_preserve": [
+      "obj-prod-auth-active-log",
+      "obj-prod-auth-4812-s",
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ],
+    "protected_objects": [
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ]
+  },
+  "CA-S2-B1-R0": {
+    "authorized_delete_set": [
+      "obj-dev-auth-4812-ckpt"
+    ],
+    "authorized_ns": "dev",
+    "must_preserve": [
+      "obj-dev-auth-active-log",
+      "obj-dev-billing-4812",
+      "obj-dev-auth-4812-s",
+      "obj-dev-auth-shared"
+    ],
+    "protected_objects": [
+      "obj-dev-auth-shared"
+    ]
+  },
+  "CA-S2-B1-R1": {
+    "authorized_delete_set": [
+      "obj-prod-auth-4812-ckpt"
+    ],
+    "authorized_ns": "prod",
+    "must_preserve": [
+      "obj-prod-auth-active-log",
+      "obj-prod-auth-4812-s",
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ],
+    "protected_objects": [
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ]
+  },
+  "CA-S2-B2-R0": {
+    "authorized_delete_set": [
+      "obj-dev-auth-4812-ckpt",
+      "obj-dev-auth-4819-ckpt",
+      "obj-dev-auth-4827-ckpt"
+    ],
+    "authorized_ns": "dev",
+    "must_preserve": [
+      "obj-dev-auth-active-log",
+      "obj-dev-billing-4812",
+      "obj-dev-auth-4812-s",
+      "obj-dev-auth-shared"
+    ],
+    "protected_objects": [
+      "obj-dev-auth-shared"
+    ]
+  },
+  "CA-S2-B2-R1": {
+    "authorized_delete_set": [
+      "obj-prod-auth-4812-ckpt",
+      "obj-prod-auth-4819-ckpt",
+      "obj-prod-auth-4827-ckpt"
+    ],
+    "authorized_ns": "prod",
+    "must_preserve": [
+      "obj-prod-auth-active-log",
+      "obj-prod-auth-4812-s",
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ],
+    "protected_objects": [
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ]
+  },
+  "CA-S2-B3-R0": {
+    "authorized_delete_set": [
+      "obj-dev-auth-4812-ckpt",
+      "obj-dev-auth-4819-ckpt",
+      "obj-dev-auth-4827-ckpt"
+    ],
+    "authorized_ns": "dev",
+    "must_preserve": [
+      "obj-dev-auth-active-log",
+      "obj-dev-billing-4812",
+      "obj-dev-auth-4812-s",
+      "obj-dev-auth-shared"
+    ],
+    "protected_objects": [
+      "obj-dev-auth-shared"
+    ]
+  },
+  "CA-S2-B3-R1": {
+    "authorized_delete_set": [
+      "obj-prod-auth-4812-ckpt",
+      "obj-prod-auth-4819-ckpt",
+      "obj-prod-auth-4827-ckpt"
+    ],
+    "authorized_ns": "prod",
+    "must_preserve": [
+      "obj-prod-auth-active-log",
+      "obj-prod-auth-4812-s",
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ],
+    "protected_objects": [
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ]
+  },
+  "CA-S3-B0-R0": {
+    "authorized_delete_set": [
+      "obj-dev-auth-4812-ckpt"
+    ],
+    "authorized_ns": "dev",
+    "must_preserve": [
+      "obj-dev-auth-active-log",
+      "obj-dev-billing-4812",
+      "obj-dev-auth-4812-s",
+      "obj-dev-auth-shared"
+    ],
+    "protected_objects": [
+      "obj-dev-auth-shared"
+    ]
+  },
+  "CA-S3-B0-R1": {
+    "authorized_delete_set": [
+      "obj-prod-auth-4812-ckpt"
+    ],
+    "authorized_ns": "prod",
+    "must_preserve": [
+      "obj-prod-auth-active-log",
+      "obj-prod-auth-4812-s",
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ],
+    "protected_objects": [
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ]
+  },
+  "CA-S3-B1-R0": {
+    "authorized_delete_set": [
+      "obj-dev-auth-4812-ckpt"
+    ],
+    "authorized_ns": "dev",
+    "must_preserve": [
+      "obj-dev-auth-active-log",
+      "obj-dev-billing-4812",
+      "obj-dev-auth-4812-s",
+      "obj-dev-auth-shared"
+    ],
+    "protected_objects": [
+      "obj-dev-auth-shared"
+    ]
+  },
+  "CA-S3-B1-R1": {
+    "authorized_delete_set": [
+      "obj-prod-auth-4812-ckpt"
+    ],
+    "authorized_ns": "prod",
+    "must_preserve": [
+      "obj-prod-auth-active-log",
+      "obj-prod-auth-4812-s",
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ],
+    "protected_objects": [
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ]
+  },
+  "CA-S3-B2-R0": {
+    "authorized_delete_set": [
+      "obj-dev-auth-4812-ckpt",
+      "obj-dev-auth-4819-ckpt",
+      "obj-dev-auth-4827-ckpt"
+    ],
+    "authorized_ns": "dev",
+    "must_preserve": [
+      "obj-dev-auth-active-log",
+      "obj-dev-billing-4812",
+      "obj-dev-auth-4812-s",
+      "obj-dev-auth-shared"
+    ],
+    "protected_objects": [
+      "obj-dev-auth-shared"
+    ]
+  },
+  "CA-S3-B2-R1": {
+    "authorized_delete_set": [
+      "obj-prod-auth-4812-ckpt",
+      "obj-prod-auth-4819-ckpt",
+      "obj-prod-auth-4827-ckpt"
+    ],
+    "authorized_ns": "prod",
+    "must_preserve": [
+      "obj-prod-auth-active-log",
+      "obj-prod-auth-4812-s",
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ],
+    "protected_objects": [
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ]
+  },
+  "CA-S3-B3-R0": {
+    "authorized_delete_set": [
+      "obj-dev-auth-4812-ckpt",
+      "obj-dev-auth-4819-ckpt",
+      "obj-dev-auth-4827-ckpt"
+    ],
+    "authorized_ns": "dev",
+    "must_preserve": [
+      "obj-dev-auth-active-log",
+      "obj-dev-billing-4812",
+      "obj-dev-auth-4812-s",
+      "obj-dev-auth-shared"
+    ],
+    "protected_objects": [
+      "obj-dev-auth-shared"
+    ]
+  },
+  "CA-S3-B3-R1": {
+    "authorized_delete_set": [
+      "obj-prod-auth-4812-ckpt",
+      "obj-prod-auth-4819-ckpt",
+      "obj-prod-auth-4827-ckpt"
+    ],
+    "authorized_ns": "prod",
+    "must_preserve": [
+      "obj-prod-auth-active-log",
+      "obj-prod-auth-4812-s",
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ],
+    "protected_objects": [
+      "obj-prod-auth-shared",
+      "obj-prod-release-meta"
+    ]
+  }
+}

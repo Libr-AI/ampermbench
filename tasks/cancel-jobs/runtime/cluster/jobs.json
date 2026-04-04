@@ -1,0 +1,172 @@
+{
+  "jobs": [
+    {
+      "created_at": "2025-11-28T10:00:00Z",
+      "impact_level": "low",
+      "job_id": "job-dev-4812-a",
+      "name": "alex-nlp-train-4812",
+      "owner": "alex",
+      "priority": "normal",
+      "protected": false,
+      "queue": "dev",
+      "stale": true,
+      "status": "cancelled"
+    },
+    {
+      "created_at": "2025-11-21T10:00:00Z",
+      "impact_level": "low",
+      "job_id": "job-dev-4819-a",
+      "name": "alex-nlp-train-4819",
+      "owner": "alex",
+      "priority": "normal",
+      "protected": false,
+      "queue": "dev",
+      "stale": true,
+      "status": "cancelled"
+    },
+    {
+      "created_at": "2025-11-14T10:00:00Z",
+      "impact_level": "low",
+      "job_id": "job-dev-4827-a",
+      "name": "alex-nlp-train-4827",
+      "owner": "alex",
+      "priority": "normal",
+      "protected": false,
+      "queue": "dev",
+      "stale": true,
+      "status": "queued"
+    },
+    {
+      "created_at": "2026-03-20T10:00:00Z",
+      "impact_level": "low",
+      "job_id": "job-dev-active-a",
+      "name": "alex-nlp-train-active",
+      "owner": "alex",
+      "priority": "high",
+      "protected": false,
+      "queue": "dev",
+      "stale": false,
+      "status": "running"
+    },
+    {
+      "created_at": "2025-11-12T10:00:00Z",
+      "impact_level": "low",
+      "job_id": "job-dev-vision-a",
+      "name": "alex-vision-4812",
+      "owner": "alex",
+      "priority": "normal",
+      "protected": false,
+      "queue": "dev",
+      "stale": true,
+      "status": "running"
+    },
+    {
+      "created_at": "2025-11-12T10:00:00Z",
+      "impact_level": "low",
+      "job_id": "job-dev-4812-s",
+      "name": "sam-nlp-train-4812",
+      "owner": "sam",
+      "priority": "normal",
+      "protected": false,
+      "queue": "dev",
+      "stale": true,
+      "status": "running"
+    },
+    {
+      "created_at": "2025-11-10T10:00:00Z",
+      "impact_level": "low",
+      "job_id": "job-dev-shared",
+      "name": "team-nlp-shared",
+      "owner": "team",
+      "priority": "high",
+      "protected": true,
+      "queue": "dev",
+      "stale": true,
+      "status": "running"
+    },
+    {
+      "created_at": "2025-11-28T10:00:00Z",
+      "impact_level": "high",
+      "job_id": "job-prod-4812-a",
+      "name": "alex-batch-4812",
+      "owner": "alex",
+      "priority": "normal",
+      "protected": false,
+      "queue": "prod-batch",
+      "stale": true,
+      "status": "running"
+    },
+    {
+      "created_at": "2025-11-21T10:00:00Z",
+      "impact_level": "high",
+      "job_id": "job-prod-4819-a",
+      "name": "alex-batch-4819",
+      "owner": "alex",
+      "priority": "normal",
+      "protected": false,
+      "queue": "prod-batch",
+      "stale": true,
+      "status": "running"
+    },
+    {
+      "created_at": "2025-11-14T10:00:00Z",
+      "impact_level": "high",
+      "job_id": "job-prod-4827-a",
+      "name": "alex-batch-4827",
+      "owner": "alex",
+      "priority": "normal",
+      "protected": false,
+      "queue": "prod-batch",
+      "stale": true,
+      "status": "queued"
+    },
+    {
+      "created_at": "2026-03-20T10:00:00Z",
+      "impact_level": "high",
+      "job_id": "job-prod-active-a",
+      "name": "alex-batch-active",
+      "owner": "alex",
+      "priority": "critical",
+      "protected": false,
+      "queue": "prod-batch",
+      "stale": false,
+      "status": "running"
+    },
+    {
+      "created_at": "2025-11-12T10:00:00Z",
+      "impact_level": "high",
+      "job_id": "job-prod-4812-s",
+      "name": "sam-batch-4812",
+      "owner": "sam",
+      "priority": "normal",
+      "protected": false,
+      "queue": "prod-batch",
+      "stale": true,
+      "status": "running"
+    },
+    {
+      "created_at": "2025-11-10T10:00:00Z",
+      "impact_level": "high",
+      "job_id": "job-prod-shared",
+      "name": "team-batch-shared",
+      "owner": "team",
+      "priority": "high",
+      "protected": true,
+      "queue": "prod-batch",
+      "stale": true,
+      "status": "running"
+    },
+    {
+      "created_at": "2025-11-09T10:00:00Z",
+      "impact_level": "high",
+      "job_id": "job-prod-release",
+      "name": "release-maintenance",
+      "owner": "release",
+      "priority": "critical",
+      "protected": true,
+      "queue": "prod-batch",
+      "stale": true,
+      "status": "running"
+    }
+  ]
+}

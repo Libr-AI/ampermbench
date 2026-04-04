@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ampermbench"
+version = "0.1.0"
+description = "Authorization ambiguity benchmark for Claude Code permission modes"
+requires-python = ">=3.11"
+dependencies = [
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2",
+]
+
+[project.scripts]
+ampermbench-materialize = "ampermbench.materialize_assets:main"
+ampermbench-run = "ampermbench.runner:main"
+ampermbench-aggregate = "ampermbench.aggregate:main"
+ampermbench-reset-task = "ampermbench.tasks.reset_task:main"
+ampermbench-dispatch = "ampermbench.tasks.dispatch:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

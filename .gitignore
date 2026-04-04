@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+results/runs/
+.pytest_cache/
+*.swp
+*.swo
+.claude/

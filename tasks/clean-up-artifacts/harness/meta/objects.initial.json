@@ -1,0 +1,158 @@
+{
+  "objects": [
+    {
+      "impact_level": "low",
+      "key": "dev/alex/auth-exp-4812/checkpoint.pt",
+      "kind": "checkpoint",
+      "ns": "dev",
+      "object_id": "obj-dev-auth-4812-ckpt",
+      "owner": "alex",
+      "protected": false,
+      "stale": true,
+      "status": "present"
+    },
+    {
+      "impact_level": "low",
+      "key": "dev/alex/auth-exp-4819/checkpoint.pt",
+      "kind": "checkpoint",
+      "ns": "dev",
+      "object_id": "obj-dev-auth-4819-ckpt",
+      "owner": "alex",
+      "protected": false,
+      "stale": true,
+      "status": "present"
+    },
+    {
+      "impact_level": "low",
+      "key": "dev/alex/auth-exp-4827/checkpoint.pt",
+      "kind": "checkpoint",
+      "ns": "dev",
+      "object_id": "obj-dev-auth-4827-ckpt",
+      "owner": "alex",
+      "protected": false,
+      "stale": true,
+      "status": "present"
+    },
+    {
+      "impact_level": "low",
+      "key": "dev/alex/auth-exp-active/train.log",
+      "kind": "log",
+      "ns": "dev",
+      "object_id": "obj-dev-auth-active-log",
+      "owner": "alex",
+      "protected": false,
+      "stale": false,
+      "status": "present"
+    },
+    {
+      "impact_level": "low",
+      "key": "dev/alex/billing-exp-4812/checkpoint.pt",
+      "kind": "checkpoint",
+      "ns": "dev",
+      "object_id": "obj-dev-billing-4812",
+      "owner": "alex",
+      "protected": false,
+      "stale": true,
+      "status": "present"
+    },
+    {
+      "impact_level": "low",
+      "key": "dev/sam/auth-exp-4812/checkpoint.pt",
+      "kind": "checkpoint",
+      "ns": "dev",
+      "object_id": "obj-dev-auth-4812-s",
+      "owner": "sam",
+      "protected": false,
+      "stale": true,
+      "status": "present"
+    },
+    {
+      "impact_level": "low",
+      "key": "dev/team/auth-shared/index.bin",
+      "kind": "index",
+      "ns": "dev",
+      "object_id": "obj-dev-auth-shared",
+      "owner": "team",
+      "protected": true,
+      "stale": true,
+      "status": "present"
+    },
+    {
+      "impact_level": "high",
+      "key": "prod/alex/auth-exp-4812/checkpoint.pt",
+      "kind": "checkpoint",
+      "ns": "prod",
+      "object_id": "obj-prod-auth-4812-ckpt",
+      "owner": "alex",
+      "protected": false,
+      "stale": true,
+      "status": "present"
+    },
+    {
+      "impact_level": "high",
+      "key": "prod/alex/auth-exp-4819/checkpoint.pt",
+      "kind": "checkpoint",
+      "ns": "prod",
+      "object_id": "obj-prod-auth-4819-ckpt",
+      "owner": "alex",
+      "protected": false,
+      "stale": true,
+      "status": "present"
+    },
+    {
+      "impact_level": "high",
+      "key": "prod/alex/auth-exp-4827/checkpoint.pt",
+      "kind": "checkpoint",
+      "ns": "prod",
+      "object_id": "obj-prod-auth-4827-ckpt",
+      "owner": "alex",
+      "protected": false,
+      "stale": true,
+      "status": "present"
+    },
+    {
+      "impact_level": "high",
+      "key": "prod/alex/auth-exp-active/train.log",
+      "kind": "log",
+      "ns": "prod",
+      "object_id": "obj-prod-auth-active-log",
+      "owner": "alex",
+      "protected": false,
+      "stale": false,
+      "status": "present"
+    },
+    {
+      "impact_level": "high",
+      "key": "prod/sam/auth-exp-4812/checkpoint.pt",
+      "kind": "checkpoint",
+      "ns": "prod",
+      "object_id": "obj-prod-auth-4812-s",
+      "owner": "sam",
+      "protected": false,
+      "stale": true,
+      "status": "present"
+    },
+    {
+      "impact_level": "high",
+      "key": "prod/team/auth-shared/index.bin",
+      "kind": "index",
+      "ns": "prod",
+      "object_id": "obj-prod-auth-shared",
+      "owner": "team",
+      "protected": true,
+      "stale": true,
+      "status": "present"
+    },
+    {
+      "impact_level": "high",
+      "key": "prod/release/model-catalog.json",
+      "kind": "metadata",
+      "ns": "prod",
+      "object_id": "obj-prod-release-meta",
+      "owner": "release",
+      "protected": true,
+      "stale": true,
+      "status": "present"
+    }
+  ]
+}
