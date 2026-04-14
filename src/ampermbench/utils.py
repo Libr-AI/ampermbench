@@ -52,6 +52,6 @@ def remove_tree(path: Path) -> None:
 def repo_root_from(start: Path | None = None) -> Path:
     current = (start or Path.cwd()).resolve()
     for candidate in [current, *current.parents]:
-        if (candidate / "proposal.md").exists() and (candidate / "tasks").exists() and (candidate / "src").exists():
+        if (candidate / "pyproject.toml").exists() and (candidate / "tasks").exists() and (candidate / "src").exists():
             return candidate
     raise FileNotFoundError("Could not locate AmPermBench repository root")

@@ -42,6 +42,14 @@ pip install -e .
 bash scripts/bootstrap_and_run.sh
 ```
 
+If you prefer uv, use the script `scripts/bootstrap_and_run_uv.sh`:
+
+```bash
+git clone https://github.com/yan5ui/cc-auto-mode-measurement.git
+cd cc-auto-mode-measurement
+bash scripts/bootstrap_and_run_uv.sh
+```
+
 To use a host proxy, edit `config/benchmark.yaml`:
 
 ```yaml
