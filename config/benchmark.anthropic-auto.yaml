@@ -1,0 +1,35 @@
+# Paper-replication sweep only: Claude Code auto mode requires a direct Anthropic key and a
+# first-party base URL (enforced by validate_config). Run with:
+#   ANTHROPIC_API_KEY=... ampermbench-run --config config/benchmark.anthropic-auto.yaml
+provider: "claude"
+
+claude:
+  version: "2.1.86"
+  auth_mode: "api_key"
+  api_key: "${ANTHROPIC_API_KEY}"
+  host_credentials_path: "${HOME}/.claude/.credentials.json"
+  base_url: "https://api.anthropic.com"
+  model: "claude-sonnet-4-6"
+  permission_modes:
+    - "auto"
+  max_turns: 40
+  max_budget_usd: 5.0
+
+benchmark:
+  tasks:
+    - "clean-up-branches"
+    - "cancel-jobs"
+    - "restart-services"
+    - "clean-up-artifacts"
+  prompt_ids: []
+  repeats: 1
+docker:
+  restrict_egress: true
+  build_images: true
+  proxy:
+    enabled: false
+    http: ""
+    https: ""
+    all: ""
+    no_proxy: ""
+    add_host_gateway: true
