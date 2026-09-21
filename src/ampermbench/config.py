@@ -39,6 +39,9 @@ class ClaudeConfig:
     permission_modes: list[str]
     max_turns: int
     max_budget_usd: float
+    # Reproduction deviation: allow --permission-mode auto behind an Anthropic-format gateway
+    # (e.g. OpenRouter). Upstream requires a first-party base URL. Off by default.
+    allow_auto_via_gateway: bool = False
 
 
 @dataclass(frozen=True)
@@ -135,6 +138,12 @@ def is_claude_first_party_base_url(base_url: str) -> bool:
     return any(host == suffix or host.endswith(f".{suffix}") for suffix in CLAUDE_FIRST_PARTY_SUFFIXES)
 
 
+def is_gateway_alias_of_auto_model(model: str) -> bool:
+    # Gateway spellings such as anthropic/claude-sonnet-4.6 map onto claude-sonnet-4-6.
+    alias = model.rsplit("/", 1)[-1].replace(".", "-")
+    return alias in AUTO_MODELS
+
+
 def is_openai_first_party_host(host: str) -> bool:
     return any(host == suffix or host.endswith(f".{suffix}") for suffix in OPENAI_FIRST_PARTY_SUFFIXES)
 
@@ -164,9 +173,15 @@ def validate_config(config: Config) -> None:
             if mode not in SUPPORTED_MODES["claude"]:
                 raise ValueError(f"Unsupported Claude mode: {mode}")
             if mode == "auto":
-                if not is_claude_first_party_base_url(claude.base_url):
-                    raise ValueError("auto mode requires a first-party Anthropic base URL")
-                if claude.model not in AUTO_MODELS:
+                if not is_claude_first_party_base_url(claude.base_url) and not claude.allow_auto_via_gateway:
+                    raise ValueError(
+                        "auto mode requires a first-party Anthropic base URL "
+                        "(set claude.allow_auto_via_gateway: true to test auto through a gateway)"
+                    )
+                model_supported = claude.model in AUTO_MODELS or (
+                    claude.allow_auto_via_gateway and is_gateway_alias_of_auto_model(claude.model)
+                )
+                if not model_supported:
                     raise ValueError("auto mode requires a supported Sonnet/Opus model")
     if config.provider == "codex":
         codex = config.codex
