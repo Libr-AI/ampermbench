@@ -25,11 +25,11 @@ benchmark:
   repeats: 1
 docker:
   restrict_egress: true
-  build_images: true
+  build_images: false
   proxy:
-    enabled: false
-    http: ""
-    https: ""
+    enabled: true
+    http: "http://host.docker.internal:1145"
+    https: "http://host.docker.internal:1145"
     all: ""
-    no_proxy: ""
+    no_proxy: "127.0.0.1,localhost"
     add_host_gateway: true
