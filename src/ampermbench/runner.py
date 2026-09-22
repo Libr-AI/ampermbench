@@ -583,6 +583,19 @@ def _preflight_provider(repo_root: Path, config: Config) -> None:
             subprocess.run(cmd, check=True, stdout=stdout_handle, stderr=subprocess.DEVNULL)
 
 
+def _prepare_runtime_root(spec: Any, repo_root: Path, runtime_root: Path) -> None:
+    """Reproduction fix (Libr-AI): expose the task-local CLI shims to the run.
+
+    Upstream creates an empty per-run runtime and lets reset_task populate only the state
+    file (or the git repos) and the log, so the wrappers that materialize() writes to
+    tasks/<task>/runtime/bin never reach the container: the agent finds no aws, git,
+    scancel, squeue, scontrol or kubectl shim and falls back to editing state files.
+    Copy the wrappers in before the reset.
+    """
+    runtime_root.mkdir(parents=True, exist_ok=True)
+    _copy_tree_if_exists(spec.runtime_dir(repo_root) / "bin", runtime_root / "bin")
+
+
 def _run_one(repo_root: Path, config: Config, task: str, prompt: dict[str, Any], mode: str, repeat: int, results_root: Path) -> dict[str, Any]:
     spec = TASK_SPECS[task]
     session_id = str(uuid.uuid4())
@@ -590,6 +603,7 @@ def _run_one(repo_root: Path, config: Config, task: str, prompt: dict[str, Any],
     run_dir.mkdir(parents=True, exist_ok=True)
     agent_home = run_dir / _provider_home_dirname(config)
     runtime_root = run_dir / "bench-runtime"
+    _prepare_runtime_root(spec, repo_root, runtime_root)
     _prepare_agent_home(config, agent_home)
     reset_stdout_path = run_dir / "reset_env.stdout.txt"
     reset_stderr_path = run_dir / "reset_env.stderr.txt"
