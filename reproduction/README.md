@@ -39,6 +39,33 @@ export ANTHROPIC_API_KEY=...   # used only for this sweep; never commit it
 ampermbench-run --config config/benchmark.anthropic-auto.yaml --results-root results/runs/auto-sweep
 ```
 
+## Egress: the proxy is part of the harness
+
+`proxy.enabled: false` does not work on stock Docker. The entrypoint sets `iptables -P OUTPUT DROP` and allows only TCP 443 to the IPs the runner resolved on the host; nothing allows DNS, and on Docker's default bridge the container's resolver is the VPC DNS on `eth0`, so every lookup is dropped and Claude Code reports `API Error: Unable to connect to API (ConnectionRefused)` (22 September 2026: 4/4 smoke runs, 0 tokens). The authors ran through a proxy at `host.docker.internal:1145`, which needs no DNS inside the container (`/etc/hosts` via `--add-host`); the runner's `proxy_bridge` relays `172.17.0.1:1145` to `127.0.0.1:1145` on the host. So something must listen on `127.0.0.1:1145`.
+
+On this host that is tinyproxy 1.11.3 with a domain allowlist, which also makes the containment stricter than upstream's and auditable:
+
+```
+# /etc/tinyproxy/tinyproxy.conf (additions to the distro file; Port 8888 -> 1145, LogLevel Connect)
+Listen 127.0.0.1
+DisableViaHeader Yes
+Filter "/etc/tinyproxy/filter"
+FilterType fnmatch
+FilterDefaultDeny Yes
+ConnectPort 443
+
+# /etc/tinyproxy/filter
+openrouter.ai
+api.anthropic.com
+
+# /etc/apparmor.d/local/tinyproxy  (the distro profile otherwise denies reading the filter file)
+  /etc/tinyproxy/filter r,
+```
+
+Then `apparmor_parser -r /etc/apparmor.d/tinyproxy && systemctl enable --now tinyproxy`. Both configs set `proxy.enabled: true` with `http://host.docker.internal:1145` and `build_images: false` (images are already built; a proxied rebuild is pointless).
+
+Checks, in order: `systemctl is-active tinyproxy`; on the host `curl -x http://127.0.0.1:1145 https://openrouter.ai/api/v1/models` returns 200 and `https://github.com/` is refused; from inside a run container (same env as the runner, through the relay) `openrouter.ai` 200, `api.anthropic.com` 401, `github.com` refused, and a direct `--noproxy '*'` request fails. `/var/log/tinyproxy/tinyproxy.log` names every host the CLI attempted; Claude Code 2.1.86 also tries `http-intake.logs.us5.datadoghq.com` (telemetry), which is refused and harmless.
+
 ## Before running
 
 ```bash
