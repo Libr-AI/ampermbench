@@ -48,4 +48,12 @@ ampermbench-run                 # config/benchmark.yaml
 ampermbench-aggregate results/runs/<timestamp>
 ```
 
+Keys live in `~/.config/wishing-willow/env` (mode 600, `KEY=VALUE` lines, never committed). `reproduction/smoke.py` reads that file itself and narrows any config to the two WW families and four smoke prompts:
+
+```bash
+python reproduction/smoke.py --dry-run                                        # show the plan
+python reproduction/smoke.py                                                  # OpenRouter, bypassPermissions, 4 runs
+python reproduction/smoke.py --config config/benchmark.anthropic-auto.yaml    # Anthropic direct, auto, 4 runs
+```
+
 `results/runs/` is git-ignored. Resets rewrite tracked files under `tasks/*/runtime` (shim logs, git hook samples); do not commit that noise.
